@@ -1,0 +1,128 @@
+<div class="main_container ">
+    <div class="header">
+      <div class="header_content">
+        <div class="honda">
+          <img src="/assets/images/honda.jpeg" alt="" class="honda_logo">
+        </div>
+        <div class="heading">Honda Data Entry System</div>
+        <div class="deevia">
+          <img src="/assets/images/deevia.jpeg" alt="" class="deevia_logo">
+        </div>
+      </div>
+    </div>
+    <div class="wrapper flex-center">
+      <div class="details_container flex-center">
+          <div class="title_content">
+              Defect Outflow Dashboard
+          </div>
+          <div class="details_content">
+              <div class="data_content">
+                <div class="data_title">Date -</div>
+                <div class="data">{{date}}</div>
+              </div>
+              <div class="data_content">
+                <div class="data_title">Day -</div>
+                <div class="data" style="text-transform: capitalize;">{{day}}</div>
+              </div>
+              <div class="data_content">
+                <div class="data_title">Production -</div>
+                <div class="data">{{production}}</div>
+              </div>
+              <div class="data_content">
+                <div class="data_title">Total Defects -</div>
+                <div class="data">{{defectCount}}</div>
+              </div>
+          </div>
+          <div class="table_content">
+            <table>
+              <tbody>
+                <tr>
+                  <th rowspan="4" scope="rowgroup">Quality Control</th>
+                </tr>
+                <tr>
+                  <th rowspan="2" scope="row">VQ -&gt; QG</th>
+                  <th>AE</th>
+                  <th>WE</th>
+                  <th>PA</th>
+                  <th>AF</th>
+                  <th>Total</th>
+                </tr>
+                <tr>
+                  <td>{{qc_vc_ae}}</td>
+                  <td>{{qc_vc_we}}</td>
+                  <td>{{qc_vc_pa}}</td>
+                  <td>{{qc_vc_af}}</td>
+                  <td>{{qc_vc_total}}</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th rowspan="8" scope="rowgroup">Production Body</th>
+                  <th  rowspan="2"scope="row">AF -> QG</th>
+                  <th>AE</th>
+                  <th>MS</th>
+                  <th>WE</th>
+                  <th>PA</th>
+                  <th>-</th>
+                </tr>
+                <tr>
+                  <td>{{pb_af_ae}}</td>
+                  <td>{{pb_af_ms}}</td>
+                  <td>{{pb_af_we}}</td>
+                  <td>{{pb_af_pa}}</td>
+                  <td>{{pb_af_total}}</td>
+                </tr>
+                <tr>
+                  <th rowspan="2" scope="row">PA -> QG</th>
+                  <th>MS</th>
+                  <th>WE</th>
+                  <th>-</th>
+                  <th>-</th>
+                  <th>-</th>
+                </tr>
+                <tr>
+                  <td>{{pb_pa_ms}}</td>
+                  <td>{{pb_pa_we}}</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>{{pb_pa_total}}</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th rowspan="8" scope="rowgroup">Power Train</th>
+                  <th  rowspan="2"scope="row">MA -> QG</th>
+                  <th>MS</th>
+                  <th>DC</th>
+                  <th>-</th>
+                  <th>-</th>
+                  <th>-</th>
+                </tr>
+                <tr>
+                  <td>{{pt_ma_ms}}</td>
+                  <td>{{pt_ma_dc}}</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>{{pt_ma_total}}</td>
+                </tr>
+                <tr>
+                  <th rowspan="2" scope="row">AE -> QG</th>
+                  <th>PQ</th>
+                  <th>MA</th>
+                  <th>-</th>
+                  <th>-</th>
+                  <th>-</th>
+                </tr>
+                <tr>
+                  <td>{{pt_ae_pq}}</td>
+                  <td>{{pt_ae_ma}}</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>{{pt_ae_total}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+</div>
