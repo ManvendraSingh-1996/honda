@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent  implements OnInit {
 
-  date:any =  new Date;
+  date:any ;
   tableData: any;
   day:any;
   production:any;
